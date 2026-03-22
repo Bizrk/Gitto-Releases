@@ -8,6 +8,10 @@ Welcome to **Gitto** — a lightweight, lightning-fast native desktop Git client
 
 Gitto is designed to get out of your way and act as a transparent GUI over your existing Git setup. Instead of reinventing the wheel with a heavy standalone Git library, Gitto interacts directly with your machine's native `git` CLI.
 
+<div align="center">
+  <img src="./Main%20UI.png" alt="Gitto Main Interface" width="800" />
+</div>
+
 ---
 
 ## 📥 Installation & Updating
@@ -50,7 +54,9 @@ Gitto is built around treating native Git features like first-class citizens:
 
 - **Worktrees over Branch-Switching**: Instead of constantly stashing your work and forcing your editor to reload all its files just to look at a bug on another branch, Gitto uses **Git Worktrees**. Selecting "Create Worktree" from a branch will attach it to an isolated folder sitting physically next to your primary repository. Work in parallel completely cleanly! 
   * Note: To prevent confusion, newly created Worktree folders are intentionally "locked" to the branch they were created for. You will use your primary core repo folder if you just want to swap branches traditionally.
+  <br/><br/><img src="./New%20Worktree%20Branch.png" alt="Creating a New Worktree" width="600" /><br/>
 - **Local Setup & Config Files**: Easily configure `.env` syncing to automatically bring essential local files to new worktrees so your local development flow is never broken by missing secrets.
+  <br/><br/><img src="./Local%20Setup%20Files.png" alt="Configuring Local Setup Files" width="600" /><br/>
 - **Diff Viewing**: Inline viewing of code changes and staging statuses straight from the active branch in an aggressively optimized panel.
 
 ---
