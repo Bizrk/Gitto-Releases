@@ -1,7 +1,7 @@
 # Gitto 🚀
 
 <div align="center">
-  <img src="./logo.svg?v=2" alt="Gitto Logo" width="300" />
+  <img src="./logo-ld.svg?v=2" alt="Gitto Logo" width="300" />
 </div>
 
 Welcome to **Gitto** — a lightweight, lightning-fast native desktop Git client built with Tauri, Rust, and React! 
