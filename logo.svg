@@ -36,6 +36,14 @@
       .glow-stop-6 { stop-color: #e0fee3; }
       .glow-stop-7 { stop-color: #ffffff; }
 
+      /* Plus inner gradient colors (Light Mode) */
+      .plus-stop-1 { stop-color: #24292f; }
+      .plus-stop-2 { stop-color: #384640; }
+      .plus-stop-3 { stop-color: #56735a; }
+      .plus-stop-4 { stop-color: #749f74; }
+      .plus-stop-5 { stop-color: #92cc8e; }
+      .plus-stop-6 { stop-color: #b4fdab; }
+
       @media (prefers-color-scheme: dark) {
         .glow-stop-1 { stop-color: #0b8a12; }
         .glow-stop-2 { stop-color: #0a8511; }
@@ -44,6 +52,14 @@
         .glow-stop-5 { stop-color: #054408; }
         .glow-stop-6 { stop-color: #021e03; }
         .glow-stop-7 { stop-color: #000000; }
+
+        /* Plus inner gradient colors (Dark Mode) */
+        .plus-stop-1 { stop-color: #fff; }
+        .plus-stop-2 { stop-color: #eafee8; }
+        .plus-stop-3 { stop-color: #d2fdcd; }
+        .plus-stop-4 { stop-color: #c1fdba; }
+        .plus-stop-5 { stop-color: #b7fdae; }
+        .plus-stop-6 { stop-color: #b4fdab; }
       }
     </style>
     <radialGradient id="radial-gradient" cx="78.4" cy="30.2" fx="78.4" fy="30.2" r="17.91" gradientUnits="userSpaceOnUse">
@@ -57,12 +73,12 @@
     </radialGradient>
     <radialGradient id="radial-gradient-2" cx="101.88" fx="101.88" r="17.91" xlink:href="#radial-gradient"/>
     <radialGradient id="radial-gradient-3" cx="78.4" cy="30.36" fx="78.4" fy="30.36" r="10.41" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#fff"/>
-      <stop offset=".14" stop-color="#eafee8"/>
-      <stop offset=".35" stop-color="#d2fdcd"/>
-      <stop offset=".56" stop-color="#c1fdba"/>
-      <stop offset=".77" stop-color="#b7fdae"/>
-      <stop offset="1" stop-color="#b4fdab"/>
+      <stop class="plus-stop-1" offset="0"/>
+      <stop class="plus-stop-2" offset=".14"/>
+      <stop class="plus-stop-3" offset=".35"/>
+      <stop class="plus-stop-4" offset=".56"/>
+      <stop class="plus-stop-5" offset=".77"/>
+      <stop class="plus-stop-6" offset="1"/>
     </radialGradient>
     <radialGradient id="radial-gradient-4" cx="101.68" fx="101.68" r="10.41" xlink:href="#radial-gradient-3"/>
   </defs>
