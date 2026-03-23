@@ -3,7 +3,12 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #fff;
+        fill: #24292f; /* Dark grey for light mode */
+      }
+      @media (prefers-color-scheme: dark) {
+        .cls-1 {
+          fill: #fff; /* White for dark mode */
+        }
       }
 
       .cls-2 {
@@ -21,15 +26,34 @@
       .cls-5 {
         fill: url(#radial-gradient-4);
       }
+
+      /* Glow gradient colors */
+      .glow-stop-1 { stop-color: #0b8a12; }
+      .glow-stop-2 { stop-color: #15a31e; }
+      .glow-stop-3 { stop-color: #2cd137; }
+      .glow-stop-4 { stop-color: #5ff167; }
+      .glow-stop-5 { stop-color: #a3f8a9; }
+      .glow-stop-6 { stop-color: #e0fee3; }
+      .glow-stop-7 { stop-color: #ffffff; }
+
+      @media (prefers-color-scheme: dark) {
+        .glow-stop-1 { stop-color: #0b8a12; }
+        .glow-stop-2 { stop-color: #0a8511; }
+        .glow-stop-3 { stop-color: #09780f; }
+        .glow-stop-4 { stop-color: #07630c; }
+        .glow-stop-5 { stop-color: #054408; }
+        .glow-stop-6 { stop-color: #021e03; }
+        .glow-stop-7 { stop-color: #000000; }
+      }
     </style>
     <radialGradient id="radial-gradient" cx="78.4" cy="30.2" fx="78.4" fy="30.2" r="17.91" gradientUnits="userSpaceOnUse">
-      <stop offset=".03" stop-color="#0b8a12"/>
-      <stop offset=".19" stop-color="#0a8511" stop-opacity=".97"/>
-      <stop offset=".35" stop-color="#09780f" stop-opacity=".87"/>
-      <stop offset=".53" stop-color="#07630c" stop-opacity=".72"/>
-      <stop offset=".7" stop-color="#054408" stop-opacity=".5"/>
-      <stop offset=".88" stop-color="#021e03" stop-opacity=".22"/>
-      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+      <stop class="glow-stop-1" offset=".03"/>
+      <stop class="glow-stop-2" offset=".19" stop-opacity=".97"/>
+      <stop class="glow-stop-3" offset=".35" stop-opacity=".87"/>
+      <stop class="glow-stop-4" offset=".53" stop-opacity=".72"/>
+      <stop class="glow-stop-5" offset=".7" stop-opacity=".5"/>
+      <stop class="glow-stop-6" offset=".88" stop-opacity=".22"/>
+      <stop class="glow-stop-7" offset="1" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="radial-gradient-2" cx="101.88" fx="101.88" r="17.91" xlink:href="#radial-gradient"/>
     <radialGradient id="radial-gradient-3" cx="78.4" cy="30.36" fx="78.4" fy="30.36" r="10.41" gradientUnits="userSpaceOnUse">
